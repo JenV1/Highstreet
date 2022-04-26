@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RestaurantTest {
 
-    Restaurant restaurant;
+    private Restaurant restaurant;
 
     @BeforeEach
     void SetUp () {

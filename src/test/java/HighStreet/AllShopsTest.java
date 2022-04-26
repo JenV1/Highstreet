@@ -10,10 +10,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AllShopsTest {
     
-    Bakery bakery;
-    ClothesShop clothesshop;
-    ShoeShop shoeshop;
-    AllShops bentalls;
+    private Bakery bakery;
+    private ClothesShop clothesshop;
+    private ShoeShop shoeshop;
+    private AllShops bentalls;
     
     @BeforeEach 
     void setUp () {

@@ -10,9 +10,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FoodCourtTest {
 
-    FoodCourt foodCourt;
-    Bakery bakery;
-    Restaurant restaurant;
+    private FoodCourt foodCourt;
+    private Bakery bakery;
+    private Restaurant restaurant;
 
     @BeforeEach
     void SetUp() {
