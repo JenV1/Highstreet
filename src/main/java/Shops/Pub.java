@@ -17,4 +17,8 @@ public class Pub extends FoodShop implements SellsAlcohol {
     public String offerDrink() {
         return "Fancy a pint of beer?";
     }
+
+    public String offerDrink(String drink) {
+        return "Fancy a pint of " + drink + "?";
+    }
 }

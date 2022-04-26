@@ -17,8 +17,13 @@ class PubTest {
     }
 
     @Test
-    void offerDrinkInPub() {
+    void offerDrinkInPub_no_args() {
         assertEquals("Fancy a pint of beer?", pub.offerDrink());
+    }
+
+    @Test
+    void offerDrinkInPub_with_args() {
+        assertEquals("Fancy a pint of wine?", pub.offerDrink("wine"));
     }
 
     @Test
