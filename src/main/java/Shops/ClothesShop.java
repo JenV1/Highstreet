@@ -2,7 +2,7 @@ package Shops;
 
 import java.util.ArrayList;
 
-public class ClothesShop extends Shop{
+public class ClothesShop extends Shop implements MeasuresPerson{
 
     private ArrayList<String> brands;
 
@@ -22,5 +22,10 @@ public class ClothesShop extends Shop{
 
     public void setBrands(ArrayList<String> brands) {
         this.brands = brands;
+    }
+
+    @Override
+    public String measure() {
+        return "Let's see what size you are!";
     }
 }

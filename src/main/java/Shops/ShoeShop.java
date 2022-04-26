@@ -2,7 +2,7 @@ package Shops;
 
 import java.util.ArrayList;
 
-public class ShoeShop extends Shop{
+public class ShoeShop extends Shop implements MeasuresPerson{
 
     public ArrayList<Integer> getSizesAvailable() {
         return sizesAvailable;
@@ -22,5 +22,10 @@ public class ShoeShop extends Shop{
     @Override
     public String greeting() {
         return "Buy shoes here!";
+    }
+
+    @Override
+    public String measure() {
+        return "I have the tape measure ready for your foot!";
     }
 }
