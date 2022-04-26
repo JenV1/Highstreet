@@ -39,15 +39,11 @@ public class Pub extends FoodShop implements SellsAlcohol {
 
     @Override
     public String greeting() {
-        switch (gameOn) {
-            case RUGBY:
-                return "The rugby is on if you want to watch something boring!";
-            case CRICKET:
-                return "They're throwing a ball on that screen there!";
-            case FOOTBALL:
-                return "The football is on and everyone is angry.";
-        }
-        return null;
+        return switch (gameOn) {
+            case RUGBY -> "The rugby is on if you want to watch something boring!";
+            case CRICKET -> "They're throwing a ball on that screen there!";
+            case FOOTBALL -> "The football is on and everyone is angry.";
+        };
     }
 
     @Override
